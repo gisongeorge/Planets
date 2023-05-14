@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B748A8F92A0E7D85008CF41F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A8F82A0E7D85008CF41F /* AppDelegate.swift */; };
+		B748A8FB2A0E7D85008CF41F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A8FA2A0E7D85008CF41F /* SceneDelegate.swift */; };
+		B748A8FD2A0E7D85008CF41F /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A8FC2A0E7D85008CF41F /* PlanetsViewController.swift */; };
+		B748A9002A0E7D85008CF41F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B748A8FE2A0E7D85008CF41F /* Main.storyboard */; };
+		B748A9032A0E7D85008CF41F /* Planets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B748A9012A0E7D85008CF41F /* Planets.xcdatamodeld */; };
+		B748A9052A0E7D87008CF41F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B748A9042A0E7D87008CF41F /* Assets.xcassets */; };
+		B748A9082A0E7D87008CF41F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B748A9062A0E7D87008CF41F /* LaunchScreen.storyboard */; };
+		B748A9132A0E7D87008CF41F /* PlanetsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9122A0E7D87008CF41F /* PlanetsViewModelTests.swift */; };
+		B748A9302A0E9AE1008CF41F /* PlanetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A92F2A0E9AE1008CF41F /* PlanetsModel.swift */; };
+		B748A9332A0E9B98008CF41F /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9322A0E9B98008CF41F /* ApiHandler.swift */; };
+		B748A9462A0E9D75008CF41F /* PlanetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9452A0E9D75008CF41F /* PlanetsService.swift */; };
+		B748A9482A0EB134008CF41F /* PlanetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9472A0EB134008CF41F /* PlanetsViewModel.swift */; };
+		B748A94A2A0EB489008CF41F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9492A0EB489008CF41F /* Constants.swift */; };
+		B748A94E2A0EBFC3008CF41F /* PlanetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A94C2A0EBFC3008CF41F /* PlanetsTableViewCell.swift */; };
+		B748A94F2A0EBFC3008CF41F /* PlanetsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B748A94D2A0EBFC3008CF41F /* PlanetsTableViewCell.xib */; };
+		B748A9512A0EC392008CF41F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9502A0EC392008CF41F /* Extensions.swift */; };
+		B748A9532A0EC977008CF41F /* PlanetsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9522A0EC977008CF41F /* PlanetsServiceMock.swift */; };
+		B748A9552A0ECAE0008CF41F /* PlanetsModelStub.json in Resources */ = {isa = PBXBuildFile; fileRef = B748A9542A0ECAE0008CF41F /* PlanetsModelStub.json */; };
+		B748A9572A0F62A5008CF41F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9562A0F62A5008CF41F /* CoreDataStack.swift */; };
+		B748A9592A0F647B008CF41F /* PlanetsDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9582A0F647B008CF41F /* PlanetsDBService.swift */; };
+		B748A96C2A0F745B008CF41F /* PlanetsEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A96A2A0F745B008CF41F /* PlanetsEntity+CoreDataClass.swift */; };
+		B748A96D2A0F745B008CF41F /* PlanetsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A96B2A0F745B008CF41F /* PlanetsEntity+CoreDataProperties.swift */; };
+		B748A96F2A0F8B4E008CF41F /* PlanetsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A96E2A0F8B4E008CF41F /* PlanetsCellViewModel.swift */; };
+		B748A9872A100DF6008CF41F /* CoreDataStackMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9862A100DF6008CF41F /* CoreDataStackMock.swift */; };
+		B748A9892A101712008CF41F /* PlanetsDBServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A9882A101712008CF41F /* PlanetsDBServiceTests.swift */; };
+		B748A98B2A101A3E008CF41F /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A98A2A101A3E008CF41F /* TestUtils.swift */; };
+		B748A98D2A10298E008CF41F /* ApiHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A98C2A10298E008CF41F /* ApiHandlerMock.swift */; };
+		B748A98F2A102B2E008CF41F /* PlanetsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A98E2A102B2E008CF41F /* PlanetsServiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B748A90F2A0E7D87008CF41F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B748A8ED2A0E7D85008CF41F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B748A8F42A0E7D85008CF41F;
+			remoteInfo = Planets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B748A8F52A0E7D85008CF41F /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B748A8F82A0E7D85008CF41F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B748A8FA2A0E7D85008CF41F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B748A8FC2A0E7D85008CF41F /* PlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
+		B748A8FF2A0E7D85008CF41F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B748A9022A0E7D85008CF41F /* Planets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planets.xcdatamodel; sourceTree = "<group>"; };
+		B748A9042A0E7D87008CF41F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B748A9072A0E7D87008CF41F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B748A9092A0E7D87008CF41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B748A90E2A0E7D87008CF41F /* PlanetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B748A9122A0E7D87008CF41F /* PlanetsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewModelTests.swift; sourceTree = "<group>"; };
+		B748A92F2A0E9AE1008CF41F /* PlanetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsModel.swift; sourceTree = "<group>"; };
+		B748A9322A0E9B98008CF41F /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
+		B748A9452A0E9D75008CF41F /* PlanetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsService.swift; sourceTree = "<group>"; };
+		B748A9472A0EB134008CF41F /* PlanetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewModel.swift; sourceTree = "<group>"; };
+		B748A9492A0EB489008CF41F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B748A94C2A0EBFC3008CF41F /* PlanetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewCell.swift; sourceTree = "<group>"; };
+		B748A94D2A0EBFC3008CF41F /* PlanetsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetsTableViewCell.xib; sourceTree = "<group>"; };
+		B748A9502A0EC392008CF41F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B748A9522A0EC977008CF41F /* PlanetsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsServiceMock.swift; sourceTree = "<group>"; };
+		B748A9542A0ECAE0008CF41F /* PlanetsModelStub.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = PlanetsModelStub.json; sourceTree = "<group>"; };
+		B748A9562A0F62A5008CF41F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B748A9582A0F647B008CF41F /* PlanetsDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsDBService.swift; sourceTree = "<group>"; };
+		B748A96A2A0F745B008CF41F /* PlanetsEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlanetsEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B748A96B2A0F745B008CF41F /* PlanetsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlanetsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B748A96E2A0F8B4E008CF41F /* PlanetsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsCellViewModel.swift; sourceTree = "<group>"; };
+		B748A9862A100DF6008CF41F /* CoreDataStackMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackMock.swift; sourceTree = "<group>"; };
+		B748A9882A101712008CF41F /* PlanetsDBServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsDBServiceTests.swift; sourceTree = "<group>"; };
+		B748A98A2A101A3E008CF41F /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		B748A98C2A10298E008CF41F /* ApiHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandlerMock.swift; sourceTree = "<group>"; };
+		B748A98E2A102B2E008CF41F /* PlanetsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsServiceTests.swift; sourceTree = "<group>"; };
+		B748A9942A10F1D2008CF41F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B748A8F22A0E7D85008CF41F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B748A90B2A0E7D87008CF41F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B748A8EC2A0E7D85008CF41F = {
+			isa = PBXGroup;
+			children = (
+				B748A9942A10F1D2008CF41F /* README.md */,
+				B748A8F72A0E7D85008CF41F /* Planets */,
+				B748A9112A0E7D87008CF41F /* PlanetsTests */,
+				B748A8F62A0E7D85008CF41F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B748A8F62A0E7D85008CF41F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B748A8F52A0E7D85008CF41F /* Planets.app */,
+				B748A90E2A0E7D87008CF41F /* PlanetsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B748A8F72A0E7D85008CF41F /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				B748A9712A0FB469008CF41F /* Screens */,
+				B748A9732A0FB784008CF41F /* Storyboard */,
+				B748A9312A0E9B51008CF41F /* Utilities */,
+				B748A92B2A0E8836008CF41F /* Application */,
+				B748A9092A0E7D87008CF41F /* Info.plist */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		B748A9112A0E7D87008CF41F /* PlanetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B748A9122A0E7D87008CF41F /* PlanetsViewModelTests.swift */,
+				B748A98E2A102B2E008CF41F /* PlanetsServiceTests.swift */,
+				B748A9882A101712008CF41F /* PlanetsDBServiceTests.swift */,
+				B748A98A2A101A3E008CF41F /* TestUtils.swift */,
+				B748A9522A0EC977008CF41F /* PlanetsServiceMock.swift */,
+				B748A9862A100DF6008CF41F /* CoreDataStackMock.swift */,
+				B748A98C2A10298E008CF41F /* ApiHandlerMock.swift */,
+				B748A9542A0ECAE0008CF41F /* PlanetsModelStub.json */,
+			);
+			path = PlanetsTests;
+			sourceTree = "<group>";
+		};
+		B748A92B2A0E8836008CF41F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B748A8F82A0E7D85008CF41F /* AppDelegate.swift */,
+				B748A8FA2A0E7D85008CF41F /* SceneDelegate.swift */,
+				B748A9042A0E7D87008CF41F /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B748A92C2A0E886C008CF41F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B748A94B2A0EBF84008CF41F /* TableViewCell */,
+				B748A8FC2A0E7D85008CF41F /* PlanetsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B748A92D2A0E9A6E008CF41F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B748A9472A0EB134008CF41F /* PlanetsViewModel.swift */,
+				B748A96E2A0F8B4E008CF41F /* PlanetsCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B748A92E2A0E9A6E008CF41F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B748A9702A0FAC86008CF41F /* CoreDataModels */,
+				B748A92F2A0E9AE1008CF41F /* PlanetsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B748A9312A0E9B51008CF41F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B748A9322A0E9B98008CF41F /* ApiHandler.swift */,
+				B748A9492A0EB489008CF41F /* Constants.swift */,
+				B748A9502A0EC392008CF41F /* Extensions.swift */,
+				B748A9562A0F62A5008CF41F /* CoreDataStack.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B748A9442A0E9D3E008CF41F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B748A9452A0E9D75008CF41F /* PlanetsService.swift */,
+				B748A9582A0F647B008CF41F /* PlanetsDBService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B748A94B2A0EBF84008CF41F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B748A94C2A0EBFC3008CF41F /* PlanetsTableViewCell.swift */,
+				B748A94D2A0EBFC3008CF41F /* PlanetsTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		B748A9702A0FAC86008CF41F /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				B748A9012A0E7D85008CF41F /* Planets.xcdatamodeld */,
+				B748A96A2A0F745B008CF41F /* PlanetsEntity+CoreDataClass.swift */,
+				B748A96B2A0F745B008CF41F /* PlanetsEntity+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		B748A9712A0FB469008CF41F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B748A9722A0FB4C7008CF41F /* Planets */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B748A9722A0FB4C7008CF41F /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				B748A92E2A0E9A6E008CF41F /* Models */,
+				B748A92C2A0E886C008CF41F /* Views */,
+				B748A92D2A0E9A6E008CF41F /* ViewModels */,
+				B748A9442A0E9D3E008CF41F /* Service */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		B748A9732A0FB784008CF41F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B748A8FE2A0E7D85008CF41F /* Main.storyboard */,
+				B748A9062A0E7D87008CF41F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B748A8F42A0E7D85008CF41F /* Planets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B748A9222A0E7D87008CF41F /* Build configuration list for PBXNativeTarget "Planets" */;
+			buildPhases = (
+				B748A8F12A0E7D85008CF41F /* Sources */,
+				B748A8F22A0E7D85008CF41F /* Frameworks */,
+				B748A8F32A0E7D85008CF41F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Planets;
+			productName = Planets;
+			productReference = B748A8F52A0E7D85008CF41F /* Planets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B748A90D2A0E7D87008CF41F /* PlanetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B748A9252A0E7D87008CF41F /* Build configuration list for PBXNativeTarget "PlanetsTests" */;
+			buildPhases = (
+				B748A90A2A0E7D87008CF41F /* Sources */,
+				B748A90B2A0E7D87008CF41F /* Frameworks */,
+				B748A90C2A0E7D87008CF41F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B748A9102A0E7D87008CF41F /* PBXTargetDependency */,
+			);
+			name = PlanetsTests;
+			productName = PlanetsTests;
+			productReference = B748A90E2A0E7D87008CF41F /* PlanetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B748A8ED2A0E7D85008CF41F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B748A8F42A0E7D85008CF41F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B748A90D2A0E7D87008CF41F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B748A8F42A0E7D85008CF41F;
+					};
+				};
+			};
+			buildConfigurationList = B748A8F02A0E7D85008CF41F /* Build configuration list for PBXProject "Planets" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B748A8EC2A0E7D85008CF41F;
+			productRefGroup = B748A8F62A0E7D85008CF41F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B748A8F42A0E7D85008CF41F /* Planets */,
+				B748A90D2A0E7D87008CF41F /* PlanetsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B748A8F32A0E7D85008CF41F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B748A9082A0E7D87008CF41F /* LaunchScreen.storyboard in Resources */,
+				B748A9052A0E7D87008CF41F /* Assets.xcassets in Resources */,
+				B748A9002A0E7D85008CF41F /* Main.storyboard in Resources */,
+				B748A94F2A0EBFC3008CF41F /* PlanetsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B748A90C2A0E7D87008CF41F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B748A9552A0ECAE0008CF41F /* PlanetsModelStub.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B748A8F12A0E7D85008CF41F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B748A8FD2A0E7D85008CF41F /* PlanetsViewController.swift in Sources */,
+				B748A8F92A0E7D85008CF41F /* AppDelegate.swift in Sources */,
+				B748A9302A0E9AE1008CF41F /* PlanetsModel.swift in Sources */,
+				B748A8FB2A0E7D85008CF41F /* SceneDelegate.swift in Sources */,
+				B748A96C2A0F745B008CF41F /* PlanetsEntity+CoreDataClass.swift in Sources */,
+				B748A9482A0EB134008CF41F /* PlanetsViewModel.swift in Sources */,
+				B748A9462A0E9D75008CF41F /* PlanetsService.swift in Sources */,
+				B748A9572A0F62A5008CF41F /* CoreDataStack.swift in Sources */,
+				B748A96F2A0F8B4E008CF41F /* PlanetsCellViewModel.swift in Sources */,
+				B748A9592A0F647B008CF41F /* PlanetsDBService.swift in Sources */,
+				B748A9332A0E9B98008CF41F /* ApiHandler.swift in Sources */,
+				B748A9032A0E7D85008CF41F /* Planets.xcdatamodeld in Sources */,
+				B748A94A2A0EB489008CF41F /* Constants.swift in Sources */,
+				B748A9512A0EC392008CF41F /* Extensions.swift in Sources */,
+				B748A94E2A0EBFC3008CF41F /* PlanetsTableViewCell.swift in Sources */,
+				B748A96D2A0F745B008CF41F /* PlanetsEntity+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B748A90A2A0E7D87008CF41F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B748A9132A0E7D87008CF41F /* PlanetsViewModelTests.swift in Sources */,
+				B748A98D2A10298E008CF41F /* ApiHandlerMock.swift in Sources */,
+				B748A9872A100DF6008CF41F /* CoreDataStackMock.swift in Sources */,
+				B748A9532A0EC977008CF41F /* PlanetsServiceMock.swift in Sources */,
+				B748A98B2A101A3E008CF41F /* TestUtils.swift in Sources */,
+				B748A9892A101712008CF41F /* PlanetsDBServiceTests.swift in Sources */,
+				B748A98F2A102B2E008CF41F /* PlanetsServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B748A9102A0E7D87008CF41F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B748A8F42A0E7D85008CF41F /* Planets */;
+			targetProxy = B748A90F2A0E7D87008CF41F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B748A8FE2A0E7D85008CF41F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B748A8FF2A0E7D85008CF41F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B748A9062A0E7D87008CF41F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B748A9072A0E7D87008CF41F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B748A9202A0E7D87008CF41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B748A9212A0E7D87008CF41F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B748A9232A0E7D87008CF41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Planets/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GG.Planets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B748A9242A0E7D87008CF41F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Planets/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GG.Planets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B748A9262A0E7D87008CF41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GG.PlanetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Planets";
+			};
+			name = Debug;
+		};
+		B748A9272A0E7D87008CF41F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GG.PlanetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Planets";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B748A8F02A0E7D85008CF41F /* Build configuration list for PBXProject "Planets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B748A9202A0E7D87008CF41F /* Debug */,
+				B748A9212A0E7D87008CF41F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B748A9222A0E7D87008CF41F /* Build configuration list for PBXNativeTarget "Planets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B748A9232A0E7D87008CF41F /* Debug */,
+				B748A9242A0E7D87008CF41F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B748A9252A0E7D87008CF41F /* Build configuration list for PBXNativeTarget "PlanetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B748A9262A0E7D87008CF41F /* Debug */,
+				B748A9272A0E7D87008CF41F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B748A9012A0E7D85008CF41F /* Planets.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B748A9022A0E7D85008CF41F /* Planets.xcdatamodel */,
+			);
+			currentVersion = B748A9022A0E7D85008CF41F /* Planets.xcdatamodel */;
+			path = Planets.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B748A8ED2A0E7D85008CF41F /* Project object */;
+}
